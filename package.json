@@ -1,0 +1,12 @@
+{
+  "name": "blu-store",
+  "version": "0.0.1",
+  "description": "e-store web app using MEAN Stack",
+  "main": "app.js",
+  "repository": {
+    "url": "https://github.com/AhmedAli7O1/blustore-front.git",
+    "type": "git"
+  },
+  "author": "Ahmed Ali",
+  "license": "MIT"
+}
