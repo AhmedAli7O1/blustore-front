@@ -11,7 +11,7 @@ var src = {
 
 gulp.task('sass', function () {
     return gulp.src(src.sass)
-        .pipe(sass({ outputStyle: 'expanded', includePaths: [src.sassFolder] }).on('error', sass.logError))
+        .pipe(sass.sync({ outputStyle: 'expanded', includePaths: [src.sassFolder] }).on('error', sass.logError))
         .pipe(gulp.dest('./client/styles'));
 });
 

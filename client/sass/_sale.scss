@@ -1,0 +1,81 @@
+/* sale section */
+
+.sale-text1 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: #fff;
+    font-size: 3em; 
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.sale-text2 {
+    @extend .sale-text1;
+    top: 55%;
+    left: 45%;
+    font-weight: 700;
+}
+
+#sale-box1 {
+    @extend .sale-box;
+    background: url('../images/bb1.jpg') no-repeat;
+    min-height: 500px;
+    
+    .sale-text2 {
+        top: 50%;
+        left: 43%;
+    }
+}
+
+#sale-box2-1 {
+    @extend .sale-box;
+    background: url('../images/bb2.jpg') no-repeat;
+}
+
+#sale-box2-2 {
+    @extend .sale-box;
+    background: url('../images/bb4.jpg') no-repeat;
+}
+
+#sale-box3-1 {
+    @extend .sale-box;
+    background: url('../images/bb3.jpg') no-repeat;
+}
+
+#sale-box3-2 {
+    @extend .sale-box;
+    background: url('../images/bb5.jpg') no-repeat;
+}
+
+// common rules for all boxes 
+.sale-box {
+    position: relative;
+    background-size: cover;
+    width: 100%; 
+    transition: all 0.5s;
+}
+
+// scale boxes on hover 
+#sale-box1:hover, 
+#sale-box2-1:hover,
+#sale-box2-2:hover,
+#sale-box3-1:hover,
+#sale-box3-2:hover {
+    @include scale(1.1);
+}
+
+#sale-box2-1,
+#sale-box2-2,
+#sale-box3-1,
+#sale-box3-2 {
+    min-height: 240px;
+}
+
+#sale-box2-2,
+#sale-box3-2 {
+    margin-top: 20px;
+}
+
+
+

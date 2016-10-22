@@ -1,8 +1,8 @@
 /*
  * header conatins 3 main sections 
- * 1. head ( contains site logo, social icons, phone number )
+ * 1. head ( contains site logo, social icons, phone number ) 
  * 2. navbar "site navigation" static on top and then become fixed on scroll
- * 3. banner big banner screen with welcome text and read more button
+ * 3. banner big banner screen with welcome text and read more button 
  */
 
 /* HEAD */
@@ -77,6 +77,13 @@
         color: #fff;
     }
 
+    // icons on header navbar e.g cart
+    .navbar-icon {
+        margin: 10px auto;
+        padding-left: 10px;
+        color: $color-dark;
+    }
+
 }
 
 /* BANNER */
@@ -88,8 +95,49 @@
     min-height: 580px;
     width: 100%;
 
+    // welcome message on banner
     h1, h3 {
         text-transform: uppercase;
+    }
+
+    h1 {
+        color: #fff;
+        letter-spacing: -2px;
+        font-weight: 700;
+
+        span {
+            color: $color-primary;
+            font-weight: 400;
+        }
+    }
+
+    h3 {
+        color: $color-primary;
+        margin-bottom: 0;
+        line-height: 10px;
+    }
+
+    .welcome-msg {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+
+        p {
+            width: 40%;
+            color: $color-shade;
+        }
+
+        button {
+            border-radius: 0;
+            background: #000;
+            color: #fff;
+            transition: all ease-in-out 0.5s;
+        }
+
+        button:hover {
+            background-color: $color-primary;
+        }
+
     }
 
 }

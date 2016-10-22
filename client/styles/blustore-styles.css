@@ -1,4 +1,4 @@
-/* main styles */
+/* main */
 body {
   font-family: Roboto;
 }
@@ -13,12 +13,12 @@ section > div > h2 {
   text-transform: uppercase;
 }
 
-/* header styles */
+/* header */
 /*
  * header conatins 3 main sections 
- * 1. head ( contains site logo, social icons, phone number )
+ * 1. head ( contains site logo, social icons, phone number ) 
  * 2. navbar "site navigation" static on top and then become fixed on scroll
- * 3. banner big banner screen with welcome text and read more button
+ * 3. banner big banner screen with welcome text and read more button 
  */
 /* HEAD */
 #header-head {
@@ -87,6 +87,12 @@ section > div > h2 {
   color: #fff;
 }
 
+#header-navbar .navbar-icon {
+  margin: 10px auto;
+  padding-left: 10px;
+  color: #687478;
+}
+
 /* BANNER */
 #header-banner {
   background: url("../images/banner.jpg") no-repeat 0 0;
@@ -97,4 +103,118 @@ section > div > h2 {
 
 #header-banner h1, #header-banner h3 {
   text-transform: uppercase;
+}
+
+#header-banner h1 {
+  color: #fff;
+  letter-spacing: -2px;
+  font-weight: 700;
+}
+
+#header-banner h1 span {
+  color: #00E58B;
+  font-weight: 400;
+}
+
+#header-banner h3 {
+  color: #00E58B;
+  margin-bottom: 0;
+  line-height: 10px;
+}
+
+#header-banner .welcome-msg {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+#header-banner .welcome-msg p {
+  width: 40%;
+  color: #f6f6f6;
+}
+
+#header-banner .welcome-msg button {
+  border-radius: 0;
+  background: #000;
+  color: #fff;
+  transition: all ease-in-out 0.5s;
+}
+
+#header-banner .welcome-msg button:hover {
+  background-color: #00E58B;
+}
+
+/* sale section */
+/* sale section */
+.sale-text1, .sale-text2 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  color: #fff;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.sale-text2 {
+  top: 55%;
+  left: 45%;
+  font-weight: 700;
+}
+
+#sale-box1 {
+  background: url("../images/bb1.jpg") no-repeat;
+  min-height: 500px;
+}
+
+#sale-box1 .sale-text2 {
+  top: 50%;
+  left: 43%;
+}
+
+#sale-box2-1 {
+  background: url("../images/bb2.jpg") no-repeat;
+}
+
+#sale-box2-2 {
+  background: url("../images/bb4.jpg") no-repeat;
+}
+
+#sale-box3-1 {
+  background: url("../images/bb3.jpg") no-repeat;
+}
+
+#sale-box3-2 {
+  background: url("../images/bb5.jpg") no-repeat;
+}
+
+.sale-box, #sale-box1, #sale-box2-1, #sale-box2-2, #sale-box3-1, #sale-box3-2 {
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+#sale-box1:hover,
+#sale-box2-1:hover,
+#sale-box2-2:hover,
+#sale-box3-1:hover,
+#sale-box3-2:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#sale-box2-1,
+#sale-box2-2,
+#sale-box3-1,
+#sale-box3-2 {
+  min-height: 240px;
+}
+
+#sale-box2-2,
+#sale-box3-2 {
+  margin-top: 20px;
 }
