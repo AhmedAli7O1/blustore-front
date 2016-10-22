@@ -1,0 +1,95 @@
+/*
+ * header conatins 3 main sections 
+ * 1. head ( contains site logo, social icons, phone number )
+ * 2. navbar "site navigation" static on top and then become fixed on scroll
+ * 3. banner big banner screen with welcome text and read more button
+ */
+
+/* HEAD */
+#header-head {
+
+    /* head main styles */
+    height: 60px;
+    padding-top: 15px;
+
+    /* site logo */
+    #logo {
+        font-size: 2.8em;
+        text-transform: uppercase;
+        letter-spacing: -2px;
+        color: $color-dark;
+        font-weight: 700;
+
+        /* logo image */
+        img {
+            height: 1em;
+            position: relative;
+            bottom: 6px;
+        }
+
+        /* second part of the logo text */
+        span {
+            color: $color-accent;
+            font-weight: 400;
+        }
+
+    }
+
+    /* set of social icons */
+    .social-icons {
+        padding-top: 3px;
+        color: $color-dark;
+    }
+
+    /* phone number and font-icon icon */
+    .phone-info {
+        padding-top: 5px;
+        font-size: 1.3em;
+        color: $color-dark;
+    }
+
+    /* hover effect on social icons & phone info */
+    .social-icons i:hover , 
+    .phone-info:hover {
+        color: #000;
+    }
+
+}
+
+/* NAVBAR */
+#header-navbar {
+
+    // general styles for navbar container
+    background: $color-shade;
+    height: 70px;
+    padding-top: 10px;
+    margin-bottom: 0;
+    border: none;
+    z-index: 1;
+
+    // nav bar links "buttons"
+    a {
+        transition: all ease-in-out 0.5s;
+    }
+
+    a:hover {
+        background: $color-primary;
+        color: #fff;
+    }
+
+}
+
+/* BANNER */
+#header-banner {
+
+    // banner container styles 
+    background: url('../images/banner.jpg') no-repeat 0 0;
+    background-size: cover;
+    min-height: 580px;
+    width: 100%;
+
+    h1, h3 {
+        text-transform: uppercase;
+    }
+
+}

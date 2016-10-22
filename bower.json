@@ -1,0 +1,23 @@
+{
+  "name": "blu-store",
+  "description": "e-store MEAN Stack web app",
+  "main": "app.js",
+  "authors": [
+    "Ahmed Ali"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/AhmedAli7O1/blustore-front",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}

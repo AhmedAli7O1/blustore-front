@@ -1,0 +1,12 @@
+$color-primary: #00E58B;
+$color-accent: #00BDBD;
+$color-warn: #f00;
+$color-shade: #f6f6f6;
+$color-dark: #687478;
+$color-background: #fff;
+
+/* main styles */
+@import 'main';
+
+/* header styles */
+@import 'header';

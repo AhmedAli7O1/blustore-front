@@ -1,0 +1,100 @@
+/* main styles */
+body {
+  font-family: Roboto;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+section > div > h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* header styles */
+/*
+ * header conatins 3 main sections 
+ * 1. head ( contains site logo, social icons, phone number )
+ * 2. navbar "site navigation" static on top and then become fixed on scroll
+ * 3. banner big banner screen with welcome text and read more button
+ */
+/* HEAD */
+#header-head {
+  /* head main styles */
+  height: 60px;
+  padding-top: 15px;
+  /* site logo */
+  /* set of social icons */
+  /* phone number and font-icon icon */
+  /* hover effect on social icons & phone info */
+}
+
+#header-head #logo {
+  font-size: 2.8em;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  color: #687478;
+  font-weight: 700;
+  /* logo image */
+  /* second part of the logo text */
+}
+
+#header-head #logo img {
+  height: 1em;
+  position: relative;
+  bottom: 6px;
+}
+
+#header-head #logo span {
+  color: #00BDBD;
+  font-weight: 400;
+}
+
+#header-head .social-icons {
+  padding-top: 3px;
+  color: #687478;
+}
+
+#header-head .phone-info {
+  padding-top: 5px;
+  font-size: 1.3em;
+  color: #687478;
+}
+
+#header-head .social-icons i:hover,
+#header-head .phone-info:hover {
+  color: #000;
+}
+
+/* NAVBAR */
+#header-navbar {
+  background: #f6f6f6;
+  height: 70px;
+  padding-top: 10px;
+  margin-bottom: 0;
+  border: none;
+  z-index: 1;
+}
+
+#header-navbar a {
+  transition: all ease-in-out 0.5s;
+}
+
+#header-navbar a:hover {
+  background: #00E58B;
+  color: #fff;
+}
+
+/* BANNER */
+#header-banner {
+  background: url("../images/banner.jpg") no-repeat 0 0;
+  background-size: cover;
+  min-height: 580px;
+  width: 100%;
+}
+
+#header-banner h1, #header-banner h3 {
+  text-transform: uppercase;
+}

@@ -1,12 +1,27 @@
 {
   "name": "blu-store",
   "version": "0.0.1",
-  "description": "e-store web app using MEAN Stack",
+  "description": "e-store MEAN Stack web app",
   "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
-    "url": "https://github.com/AhmedAli7O1/blustore-front.git",
-    "type": "git"
+    "type": "git",
+    "url": "git+https://github.com/AhmedAli7O1/blustore-front.git"
   },
   "author": "Ahmed Ali",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AhmedAli7O1/blustore-front/issues"
+  },
+  "homepage": "https://github.com/AhmedAli7O1/blustore-front#readme",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-usemin": "^0.3.24"
+  },
+  "dependencies": {}
 }
